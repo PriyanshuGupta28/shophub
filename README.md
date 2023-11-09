@@ -37,7 +37,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/PriyanshuGupta28/shop-hub.git
+git clone https://github.com/PriyanshuGupta28/shophub.git
 Change to the project directory:
 
 bash

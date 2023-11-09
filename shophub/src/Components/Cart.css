@@ -1,0 +1,91 @@
+.cartRoot {
+  background-color: #313131;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.171) 2px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+  color: white;
+}
+
+.mainContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Display 4 items on desktop */
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  gap: 5rem;
+  width: 100%;
+  height: 100%;
+}
+.cartContainer {
+  background-color: #f8d5bc;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+  color: black;
+  padding: 1rem 2rem;
+}
+
+.cartContainer:hover {
+  box-shadow: rgba(237, 192, 13, 0.659) 5px 5px,
+    rgba(240, 230, 46, 0.3) 10px 10px, rgba(240, 240, 46, 0.2) 5px 15px,
+    rgba(227, 240, 46, 0.1) 20px 20px, rgba(227, 240, 46, 0.05) 25px 25px;
+}
+
+.cartUpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartImg {
+  height: 180px;
+  width: 180px;
+}
+
+.cartSingleDetails svg {
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+.cartCart svg {
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
+}
+
+.cartButtons {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.cartButtons button {
+  color: wheat;
+}
+
+.cartTotal {
+  font-weight: 700;
+  font-size: large;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  /* Display 3 items on tablets (max-width: 1024px) */
+  .mainContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Display 1 item on mobile devices (max-width: 768px) */
+  .mainContainer {
+    grid-template-columns: 1fr;
+  }
+}

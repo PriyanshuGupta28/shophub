@@ -1,0 +1,37 @@
+.cardRoot {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: #f8d5bc;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+
+.cardRoot:hover {
+  box-shadow: rgba(237, 192, 13, 0.659) 5px 5px,
+    rgba(240, 230, 46, 0.3) 10px 10px, rgba(240, 240, 46, 0.2) 5px 15px,
+    rgba(227, 240, 46, 0.1) 20px 20px, rgba(227, 240, 46, 0.05) 25px 25px;
+}
+
+.cardUpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardImg {
+  height: 180px;
+  width: 180px;
+}
+
+.cardSingleDetails svg {
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+.cardCart svg {
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
+}

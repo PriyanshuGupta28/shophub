@@ -1,0 +1,34 @@
+.cardsRoot {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Display 4 items on desktop */
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  gap: 5rem;
+  width: 100%;
+  height: 100%;
+  background-color: #313131;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.171) 2px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+}
+
+@media (max-width: 1024px) {
+  /* Display 3 items on tablets (max-width: 1024px) */
+  .cardsRoot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Display 1 item on mobile devices (max-width: 768px) */
+  .cardsRoot {
+    grid-template-columns: 1fr;
+  }
+}

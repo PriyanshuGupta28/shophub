@@ -1,0 +1,26 @@
+.signupRoot {
+  width: 80%;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: #313131;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.171) 2px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+}
+.signupConatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signupRoot h2 {
+  color: white;
+}
+.signupRoot button {
+  margin-top: 1rem;
+  color: white;
+}

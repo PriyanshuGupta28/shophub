@@ -1,0 +1,89 @@
+.navRoot {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8d5bc;
+}
+
+.brandSection {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandLogo {
+  font-size: 2rem;
+}
+
+.brandName {
+  color: black;
+  text-align: center;
+}
+
+.brandLink {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: larger;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLinks .link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: larger;
+}
+
+.navLinks .link:hover {
+  color: #9d3615;
+}
+
+.navCart svg {
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
+}
+.navHam {
+  display: none;
+}
+
+.silder {
+  width: 70%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  /* Display 3 items on tablets (max-width: 1024px) */
+  .navLinks {
+    display: none;
+  }
+  .navHam {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Display 1 item on mobile devices (max-width: 768px) */
+  .cardsRoot {
+    grid-template-columns: 1fr;
+  }
+
+  .navHam {
+    display: flex;
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+  }
+}

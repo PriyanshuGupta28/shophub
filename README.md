@@ -63,23 +63,6 @@ Navigate between different pages using the navigation bar.
 Folder Structure
 The project has the following folder structure:
 
-java
-Copy code
-shop-hub/
-├── src/
-│ ├── components/
-│ ├── actions/
-│ ├── reducers/
-│ ├── ...
-│
-├── public/
-│ ├── index.html
-│ ├── ...
-│
-├── README.md
-├── package.json
-├── ...
-Contributing
 If you'd like to contribute to this project, feel free to submit pull requests. Make sure to follow the coding and testing guidelines.
 
 License
